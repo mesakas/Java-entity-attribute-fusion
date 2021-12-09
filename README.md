@@ -3,6 +3,17 @@ Java 的同名字段赋值工具
 
 一个非常简单的同名字段赋值工具，需要getter和setter
 
+
+请注意，如果使用了mybatis-plus，那么你需要在application.yml中将mybatis-plus的驼峰自动转换的功能关闭：
+``` yml
+# 关闭自动将下划线命名方式转换成驼峰命名方式的功能
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+```
+
+
+
 ### DAO
 ``` java
 
